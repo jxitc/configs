@@ -17,8 +17,15 @@ snippet ab
 	abstract
 snippet re
 	return
-snippet br
+#break
+snippet br break
 	break;
+snippet br Buffered Reader
+	BufferedReader ${1} = new BufferedReader(new FileReader(${2}));
+	String ${2};
+	while ((${2} = ${1}.readLine()) != null) {
+	}
+
 snippet de
 	default:
 		${1}

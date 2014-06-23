@@ -1,6 +1,5 @@
 snippet main
-	public static void main (String [] args)
-	{
+	public static void main (String[] args) {
 		${1:/* code */}
 	}
 snippet pu
@@ -83,3 +82,13 @@ snippet cos
 	static public final String ${1:var} = "${2}";${3}
 snippet as
 	assert ${1:test} : "${2:Failure message}";${3}
+snippet iterjson
+	Iterator<?> keys = jObject.keys();
+	while (keys.hasNext()){
+	  String key = (String)keys.next();
+	  if(jObject.get(key) instanceof JSONObject ){
+	    //Do something
+	  }
+	}
+snippet print
+	System.out.println(${1:something});

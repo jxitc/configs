@@ -104,3 +104,23 @@ snippet frjson
 	fr = codecs.open(fn, 'r', 'utf-8')
 	j_obj = json.load(fr)
 	fr.close()
+# use my TsvReader
+snippet tr
+	from jxpylib.io.TsvReader import *
+	${1:tr} = TsvReader(${2:fn}, utf8Mode = True)
+	title = $1.get_title()
+	for d in $1.xreadlines_asdict():
+	  pass
+# use my TsvWriter
+snippet tw
+	from jxpylib.io.TsvWriter import *
+	${1:tw} = TsvWriter(${2:fn}, utf8Mode = True)
+	$1.write_title(${3:[]});
+	for d in $1.xreadlines_asdict():
+	  pass
+
+# import argv
+snippet argv
+	import sys
+	${1:fn} = sys.argv[1]
+

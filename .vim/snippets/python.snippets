@@ -91,6 +91,19 @@ snippet # Python header
 	#!/usr/bin/env python2
 snippet # encoding utf8
 	#-*- encoding:utf8 -*-
+snippet fwcodecs
+	import codecs
+	fw = codecs.open(fn_out, 'w', 'utf-8')
+snippet frcodecs
+	import codecs
+	fr = codecs.open(fn, 'r', 'utf-8')
+snippet jsondumps
+	json.dumps(j_all, ensure_ascii = False, indent = 2)
+snippet frjson
+	import codecs
+	fr = codecs.open(fn, 'r', 'utf-8')
+	j_obj = json.load(fr)
+	fr.close()
 # use my TsvReader
 snippet tr
 	from jxpylib.io.TsvReader import *

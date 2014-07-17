@@ -1,9 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/xiao/mobvoi/query_analysis/QueryAnalysis'
-let g:netrw_dirhist_2='/home/xiao/mobvoi/query_analysis/QueryAnalysis/src'
-let g:netrw_dirhist_3='/home/xiao/mbvproj/0304_new_onebox/baike-vd'
-let g:netrw_dirhist_4='/home/xiao/mbvproj/0304_new_onebox/classification/house_shop_job_lifeserv'
-let g:netrw_dirhist_5='/home/xiao/yaguang/sohu_video'
-let g:netrw_dirhist_6='/home/xiao/mobvoi/query_analysis/QueryAnalysis/null'
-let g:netrw_dirhist_7='/home/xiao/yaguang/novel'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/xjiang/mbvproj/0716_reminder_tagging/data'
+let g:netrw_dirhist_2='/home/xjiang/mbvproj/0716_reminder_tagging/script'

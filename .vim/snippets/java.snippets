@@ -92,3 +92,26 @@ snippet iterjson
 	}
 snippet print
 	System.out.println(${1:something});
+snippet author
+	/**
+	* Your description
+	*
+	* @author Xiao Jiang, <xjiang@mobvoi.com>
+	* @Date 25 June 2014
+	*/
+snippet //copy
+	// Copyright 2014 Mobvoi Inc. All Rights Reserved.
+snippet nanoTime	
+	long beginTime, endTime;
+	beginTime = System.nanoTime();
+	// Do something
+	endTime = System.nanoTime();
+	float timeElapsed = (endTime - beginTime) / 1000000L;
+	System.out.println(String.format(" (%.1f ms)\t",  timeElapsed));
+snippet /**
+	/**
+	 * ${1:description}
+	 * @param param
+	 * @return rtn
+	 * @throws Exeptions
+	 */

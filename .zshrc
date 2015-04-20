@@ -69,12 +69,12 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin/"
 
 
 echo "Running zshrc"
-export PYTHONPATH=$PYTHONPATH:/Users/xiaojiang/lib:/Users/xiaojiang/lib/jxitcpy
-export PYLIB=/Users/xiaojiang/lib/
+export PYTHONPATH=$PYTHONPATH:/Users/xiao/lib:/Users/xiao/lib/jxitcpy
+export PYLIB=/Users/xiao/lib/
 export MBVBIN=$PYLIB/mbvpylib/script
-export MBVDATA=/Users/xiaojiang/mbvpylib/data/
+export MBVDATA=/Users/xiao/mbvpylib/data/
 
-export QA_TR_PATH=/home/xiaojiang/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/queryanalysis/WEB-INF/classification_models/public.tr
+export QA_TR_PATH=/home/xiao/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/queryanalysis/WEB-INF/classification_models/public.tr
 
 export QA_TEST_URL='test-open.mobvoi.com/v/1.0'
 export QA_TEST_BASE_URL='www.yuyiguo.com'
@@ -86,7 +86,7 @@ export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.2
 export M2=$M2_HOME/bin
 export MAVEN_OPTS="-Xms256m -Xmx512m"
 export PATH=$M2:$PATH
-export ANDROID_HOME=/Users/xiaojiang/lib/android-sdk-macosx/
+export ANDROID_HOME=/Users/xiao/lib/android-sdk-macosx/
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -81,6 +81,7 @@ export QA_TEST_BASE_URL='www.yuyiguo.com'
 export QA_TEST_AUTH_TOKEN='tHNVp4JTT29NPZwJcSVg'
 
 alias ctags="`brew --prefix`/bin/ctags"
+alias gs='git status'
 
 export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.2
 export M2=$M2_HOME/bin
@@ -90,3 +91,11 @@ export ANDROID_HOME=/Users/xiao/lib/android-sdk-macosx/
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+alias fuck='eval $(thefuck $(fc -ln -1))'
+# You can use whatever you want as an alias, like for Mondays:
+alias FUCK='fuck'
+alias grf='greadlink -f'
+#alias cpgrf='greadlink -f $1'
+alias cpgrf='function _cpgrf(){grf $1 | pbcopy; echo "Path copied: `grf $1`"};_cpgrf'
+

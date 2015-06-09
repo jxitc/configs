@@ -97,5 +97,6 @@ alias fuck='eval $(thefuck $(fc -ln -1))'
 alias FUCK='fuck'
 alias grf='greadlink -f'
 #alias cpgrf='greadlink -f $1'
-alias cpgrf='function _cpgrf(){grf $1 | pbcopy; echo "Path copied: `grf $1`"};_cpgrf'
+alias cpgrf='function _cpgrf(){echo -n `grf $1` | pbcopy; echo "Path copied: `grf $1`"};_cpgrf'
+alias vi=vim
 

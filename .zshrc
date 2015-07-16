@@ -99,4 +99,9 @@ alias grf='greadlink -f'
 #alias cpgrf='greadlink -f $1'
 alias cpgrf='function _cpgrf(){echo -n `grf $1` | pbcopy; echo "Path copied: `grf $1`"};_cpgrf'
 alias vi=vim
+export EDITOR="vim"
+alias gcfp="git cat-file -p"
+alias glgo="git log --graph --oneline"
+
+alias src="source ~/.zshrc"
 

@@ -83,7 +83,6 @@ export QA_TEST_AUTH_TOKEN='tHNVp4JTT29NPZwJcSVg'
 alias ctags="`brew --prefix`/bin/ctags"
 alias gs='git status'
 
-export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.2
 export M2=$M2_HOME/bin
 export MAVEN_OPTS="-Xms256m -Xmx512m"
 export PATH=$M2:$PATH
@@ -105,3 +104,4 @@ alias glgo="git log --graph --oneline"
 
 alias src="source ~/.zshrc"
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home

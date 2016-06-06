@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="simple"
+# all theme: https://github.com/robbyrussell/oh-my-zsh/wiki/themes
+ZSH_THEME="ys"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -105,3 +106,6 @@ alias glgo="git log --graph --oneline"
 alias src="source ~/.zshrc"
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
+
+# enable vi mode in zsh
+bindkey -v

@@ -1,0 +1,1 @@
+/Users/xiao/lib/xj_vim/.zshrc

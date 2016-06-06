@@ -109,3 +109,9 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
 
 # enable vi mode in zsh
 bindkey -v
+bindkey -M viins '^R' history-incremental-search-backward
+bindkey -M vicmd '^R' history-incremental-search-backward
+bindkey '^P' up-history
+bindkey '^N' down-history
+
+

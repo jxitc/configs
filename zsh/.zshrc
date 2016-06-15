@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # all theme: https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="ys"
+ZSH_THEME="awesomepanda"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -70,24 +70,17 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin/"
 
 
 echo "Running zshrc"
-export PYTHONPATH=$PYTHONPATH:/Users/xiao/lib:/Users/xiao/lib/jxitcpy
-export PYLIB=/Users/xiao/lib/
-export MBVBIN=$PYLIB/mbvpylib/script
-export MBVDATA=/Users/xiao/mbvpylib/data/
-
 export QA_TR_PATH=/home/xiao/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/queryanalysis/WEB-INF/classification_models/public.tr
 
 export QA_TEST_URL='test-open.mobvoi.com/v/1.0'
 export QA_TEST_BASE_URL='www.yuyiguo.com'
 export QA_TEST_AUTH_TOKEN='tHNVp4JTT29NPZwJcSVg'
 
-alias ctags="`brew --prefix`/bin/ctags"
 alias gs='git status'
 
 export M2=$M2_HOME/bin
 export MAVEN_OPTS="-Xms256m -Xmx512m"
 export PATH=$M2:$PATH
-export ANDROID_HOME=/Users/xiao/lib/android-sdk-macosx/
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
@@ -96,8 +89,6 @@ alias fuck='eval $(thefuck $(fc -ln -1))'
 # You can use whatever you want as an alias, like for Mondays:
 alias FUCK='fuck'
 alias grf='greadlink -f'
-#alias cpgrf='greadlink -f $1'
-alias cpgrf='function _cpgrf(){echo -n `grf $1` | pbcopy; echo "Path copied: `grf $1`"};_cpgrf'
 alias vi=vim
 export EDITOR="vim"
 alias gcfp="git cat-file -p"
@@ -105,7 +96,6 @@ alias glgo="git log --graph --oneline"
 
 alias src="source ~/.zshrc"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
 
 # enable vi mode in zsh
 bindkey -v
@@ -114,4 +104,18 @@ bindkey -M vicmd '^R' history-incremental-search-backward
 bindkey '^P' up-history
 bindkey '^N' down-history
 
+alias lt="ll -t"
 
+if [[ "$(uname)" == "Darwin" ]]; then
+  echo "## Install Mac specific commands"
+  ZSH_THEME="ys"
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
+  alias logcmd="echo $1 >> .cmds"
+  alias cpgrf='function _cpgrf(){echo -n `grf $1` | pbcopy; echo "Path copied: `grf $1`"};_cpgrf'
+  alias ctags="`brew --prefix`/bin/ctags"
+  export PYTHONPATH=$PYTHONPATH:/Users/xiao/lib:/Users/xiao/lib/jxitcpy
+  export PYLIB=/Users/xiao/lib/
+  export MBVBIN=$PYLIB/mbvpylib/script
+  export MBVDATA=/Users/xiao/mbvpylib/data/
+  export ANDROID_HOME=/Users/xiao/lib/android-sdk-macosx/
+fi

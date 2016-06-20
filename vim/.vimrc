@@ -65,8 +65,8 @@ set mat=5 " how many tenths of a second to blink matching brackets for
 "set nohlsearch " do not highlight searched for phrases
 set incsearch " BUT do highlight as you type you search phrase
 set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$ " what to show when I hit :set list
-set lines=40 " 80 lines tall
-set columns=100 " 160 cols wide
+"set lines=20 " 80 lines tall
+"set columns=100 " 160 cols wide
 "winpos 1610 10
 set so=10 " Keep 10 lines (top/bottom) for scope
 set novisualbell " don't blink

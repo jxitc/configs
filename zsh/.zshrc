@@ -105,6 +105,7 @@ bindkey '^P' up-history
 bindkey '^N' down-history
 
 alias lt="ll -t"
+alias rl="readlink -f"
 
 if [[ "$(uname)" == "Darwin" ]]; then
   echo "## Install Mac specific commands"

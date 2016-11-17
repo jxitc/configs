@@ -237,6 +237,11 @@ function! Rnvar()
 endfunction
 
 
+augroup filetype
+  au! BufRead,BufNewFile *.proto setfiletype proto
+augroup end
+
+
 " enable snipMate
 :filetype plugin on
 

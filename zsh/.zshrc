@@ -113,6 +113,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
   alias cpgrf='function _cpgrf(){echo -n `grf $1` | pbcopy; echo "Path copied: `grf $1`"};_cpgrf'
   alias ctags="`brew --prefix`/bin/ctags"
+  alias readlink="greadlink"
   export PYTHONPATH=$PYTHONPATH:/Users/xiao/lib:/Users/xiao/lib/jxitcpy
   export PYLIB=/Users/xiao/lib/
   export MBVBIN=$PYLIB/mbvpylib/script

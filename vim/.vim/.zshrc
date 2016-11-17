@@ -1,1 +1,1 @@
-/Users/xiao/lib/xj_vim/.zshrc
+/Users/xiao/lib/xj_vim/zsh/.zshrc

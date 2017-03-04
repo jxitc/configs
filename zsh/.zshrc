@@ -112,7 +112,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
   echo "## Install Mac specific commands"
   ZSH_THEME="ys"
   export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
-  alias logcmd="echo $1 >> .cmds"
   alias cpgrf='function _cpgrf(){echo -n `grf $1` | pbcopy; echo "Path copied: `grf $1`"};_cpgrf'
   alias ctags="`brew --prefix`/bin/ctags"
   alias readlink="greadlink"
@@ -122,4 +121,8 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export MBVDATA=/Users/xiao/mbvpylib/data/
   export ANDROID_HOME=/Users/xiao/lib/android-sdk-macosx/
   export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home; export PATH="$JAVA_HOME/bin:$PATH"
+else
+  export LC_CTYPE=""
 fi
+
+alias logcmd="echo $1 >> .cmds"

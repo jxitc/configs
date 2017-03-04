@@ -7000,7 +7000,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Pictures</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{1276, 777}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -7036,15 +7036,27 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>-1884 693 606 456 -2560 -249 2560 1417 </string>
+	<string>147 315 606 456 0 0 1280 777 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>-1780 137 606 456 -2560 -279 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-3581 111 1018 732 -3584 104 1024 745 </string>
+	<string>-1277 -277 1274 1413 -2560 -279 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-1551 354 650 387 -2560 -279 2560 1417 </string>
+	<string>224 289 650 387 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1 26 1274 746 0 0 1280 777 </string>
+	<string>-1812 602 650 387 -1920 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>-1631 86 650 387 -1920 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>-1610 63 650 387 -1920 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>-1589 40 650 387 -1920 0 1920 1177 </string>
+	<key>NeverWarnAboutShortLivedSessions_7E137C40-A6EF-4A08-AA6A-B3E78D6A9B19</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_7E137C40-A6EF-4A08-AA6A-B3E78D6A9B19_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -12449,6 +12461,8 @@
 			<string></string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -12594,6 +12608,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/xiao/lib/xj_vim/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnClose</key>
 	<false/>
 	<key>PromptOnQuit</key>
@@ -12613,11 +12629,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml?shard=84</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=84</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-18T05:24:34Z</date>
+	<date>2016-12-29T11:42:47Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.4</string>
 	<key>SavePasteHistory</key>
@@ -12706,7 +12722,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160523</string>
+	<string>3.0.13</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

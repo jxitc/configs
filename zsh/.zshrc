@@ -106,6 +106,7 @@ bindkey '^N' down-history
 
 alias lt="ll -t"
 alias rl="readlink -f"
+alias gb="git blame -M -n -L '/"$1"/,+1'$2"
 
 if [[ "$(uname)" == "Darwin" ]]; then
   echo "## Install Mac specific commands"
@@ -120,4 +121,5 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export MBVBIN=$PYLIB/mbvpylib/script
   export MBVDATA=/Users/xiao/mbvpylib/data/
   export ANDROID_HOME=/Users/xiao/lib/android-sdk-macosx/
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home; export PATH="$JAVA_HOME/bin:$PATH"
 fi

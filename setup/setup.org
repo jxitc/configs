@@ -1,0 +1,21 @@
+- screen shot: https://dev.to/dianjuar/i3wm-screenshot-shortcuts-3n7b
+
+- capslock map to ctrl: https://www.reddit.com/r/i3wm/comments/jjjcbe/compose_key_and_remap_capslock_to_ctrl/
+```
+exec --no-startup-id "setxkbmap -option ctrl:nocaps"
+```
+
+- system clipboard: https://sophieau.com/article/how-to-get-the-system-clipboard-working-in-vim-on-fedora/
+```
+sudo yum install vim-X11
+// or sudo dnf install vim-X11
+alias vim='gvim -v'
+export EDITOR="gvim -v"
+export VISUAL="$EDITOR"
+
+// change default register to system register (in .vimrc)
+set clipboard=unnamedplus
+```
+
+
+

@@ -254,3 +254,5 @@ set encoding=utf-8
 
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 
+" set clipboard to + by default to use system clipboard
+set clipboard=unnamedplus

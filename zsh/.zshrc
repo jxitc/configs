@@ -123,13 +123,12 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home; export PATH="$JAVA_HOME/bin:$PATH"
 else
   export LC_CTYPE=""
+  # use gvim instead of vim in Fedora
+  # https://sophieau.com/article/how-to-get-the-system-clipboard-working-in-vim-on-fedora/
+  alias vim='gvim -v'
+  export EDITOR="gvim -v"
+  export VISUAL="$EDITOR"
 fi
 
 alias logcmd="echo $1 >> .cmds"
-
-# use gvim instead of vim in Fedora
-# https://sophieau.com/article/how-to-get-the-system-clipboard-working-in-vim-on-fedora/
-alias vim='gvim -v'
-export EDITOR="gvim -v"
-export VISUAL="$EDITOR"
 

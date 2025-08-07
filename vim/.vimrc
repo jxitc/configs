@@ -13,7 +13,6 @@ set nocompatible " get out of horrible vi-compatible mode
 filetype on " detect the type of file
 set history=1000 " How many lines of history to remember
 set cf " enable error files and error jumping
-set clipboard+=unnamed " turns out I do like is sharing windows clipboard
 set ffs=unix,mac,dos " support all three, in this order
 filetype plugin on " load filetype plugins
 set viminfo+=! " make sure it can save viminfo
@@ -254,5 +253,8 @@ set encoding=utf-8
 
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 
-" set clipboard to + by default to use system clipboard
-set clipboard=unnamedplus
+if has('mac')
+  set clipboard=unnamed
+elseif has('unix')
+  set clipboard=unnamedplus
+endif

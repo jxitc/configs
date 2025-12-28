@@ -54,6 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin/"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -128,6 +129,10 @@ else
   alias vim='gvim -v'
   export EDITOR="gvim -v"
   export VISUAL="$EDITOR"
+
+  # map Capslock to Ctrl
+  setxkbmap -option ctrl:swapcaps
+
 fi
 
 alias logcmd="echo $1 >> .cmds"
